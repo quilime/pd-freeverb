@@ -2,7 +2,7 @@
 
 lib.name = freeverb~
 
-freeverb~.class.sources := freeverb~.c
+freeverb~.class.sources := src/freeverb~.c
 
 datafiles = \
 freeverb~-help.pd \
@@ -16,9 +16,9 @@ voice.wav
 
 
 externalsdir = ..
-# include Makefile.pdlibbuilder from parent or current directory 
--include $(externalsdir)/Makefile.pdlibbuilder 
+# include Makefile.pdlibbuilder from parent or current directory
+-include $(externalsdir)/Makefile.pdlibbuilder
 
-ifndef Makefile.pdlibbuilder 
-include Makefile.pdlibbuilder 
+ifndef Makefile.pdlibbuilder
+include Makefile.pdlibbuilder
 endif
